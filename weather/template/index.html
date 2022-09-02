@@ -33,12 +33,13 @@
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15258072.40570261!2d82.75252935!3d20.98801345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1662013976976!5m2!1sen!2sin" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 <!--Google Maps-->
+{%if data.Country_code%}
 <h1 style="color: red;">{{city}}</h1>
 <h4> Country_code:{{data.Country_code}}</h4>
 <h4> temperature: {{data.temperature}}</h4>
 <h4> Pressure: {{data.Pressure}}</h4>
 <h4> Humidity: {{data.Humidity}}</h4>
-
+{%endif%}
 </div>
 </div>
     <!-- Optional JavaScript; choose one of the two! -->
